@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid" style="background-color:#1E88E5;color:#fff;height:200px;">
+  <h1>DIAMETRIC</h1>
+  <h3>BLOOD GLUCOSE LEVEL PREDICTION </h3>
+  <p>Using Least Angle Regression (LARS) to predict your blood glucose level.</p>
+</div>
+
+  
+<div class="container-fluid" style="background-color:#ff9800;color:#fff;height:1400px;">
+
+<form action='/third' method='POST' id='submitform'>  
+
+<h3><label for="plan">What are you planning to do ?</label><br></h3> 
+
+<div class="radio">
+  <label><input type="radio" name="plan" value="1">Relax</label>
+</div>
+<div class="radio">
+  <label><input type="radio" name="plan" value="2">Work</label>
+</div>
+<div class="radio">
+  <label><input type="radio" name="plan" value="3">Extreme Work</label>
+</div>
+
+<h3><label for="tired">Are you feeling tired or dizzy ?</label><br> </h3>
+
+  <div class="radio">
+  <label><input type="radio" name="tired" value="1">Tired</label>
+</div>
+<div class="radio">
+  <label><input type="radio" name="tired" value="2">Not Tired</label>
+</div>
+
+
+  <br>
+  <h3>Enter the food options and their respective servings - </label><br><br><br></h3>
+  <h4>Food Item 1:</h4>
+  <select name="food1" class="form-control btn btn-default dropdown-toggle" data-toggle="dropdown" >
+  <option value="0" selected="selected">none</option>
+  <option value="0">nosugar</option>
+  <option value="58">banana</option>
+  <option value="34">apple</option>
+  <option value="103">dates</option>
+  <option value="60">mango</option>
+  <option value="31">milk</option>
+  <option value="41">coconut juice</option>
+  <option value="68">coke</option>
+  <option value="42">orange</option>
+  <option value="72">brownrice</option>
+  <option value="58">basmati rice</option>
+  <option value="52">noodles</option>
+  <option value="50">oats</option>
+  </select> 
+
+<div class="form-group">
+    <label for="q1"> Enter the serving quantity of this food item</label><br>
+    <input type="text" name="q1" value="0" STYLE="color:black;"><br><br><br>
+   </div>
+
+  <h4>Food Item 2:</h4>
+  <select name="food2" class="form-control btn btn-default dropdown-toggle" data-toggle="dropdown">
+  <option value="0" selected="selected">none</option>
+  <option value="0">nosugar</option>
+  <option value="58">banana</option>
+  <option value="34">apple</option>
+  <option value="103">dates</option>
+  <option value="60">mango</option>
+  <option value="31">milk</option>
+  <option value="41">coconut juice</option>
+  <option value="68">coke</option>
+  <option value="42">orange</option>
+  <option value="72">brownrice</option>
+  <option value="58">basmati rice</option>
+  <option value="52">noodles</option>
+  <option value="50">oats</option>
+  </select> 
+
+
+  <div class="form-group">
+    <label for="q2"> Enter the serving quantity of this food item</label><br>
+    <input type="text" name="q2" value="0" STYLE="color:black;"><br><br><br>
+   </div>
+
+
+  <h4>Food Item 3:</h4>
+  <select name="food3" class="form-control btn btn-default dropdown-toggle" data-toggle="dropdown">
+  <option value="0" selected="selected">none</option>
+  <option value="0" >nosugar</option>
+  <option value="58">banana</option>
+  <option value="34">apple</option>
+  <option value="103">dates</option>
+  <option value="60">mango</option>
+  <option value="31">milk</option>
+  <option value="41">coconut juice</option>
+  <option value="68">coke</option>
+  <option value="42">orange</option>
+  <option value="72">brownrice</option>
+  <option value="58">basmati rice</option>
+  <option value="52">noodles</option>
+  <option value="50">oats</option>
+  </select> 
+
+  <div class="form-group">
+    <label for="q3"> Enter the serving quantity of this food item</label><br>
+    <input type="text" name="q3" value="0" STYLE="color:black;"><br><br><br>
+   </div>
+
+  
+
+  <input type="submit" value="Submit" class="btn btn-danger">
+</div>
+</form>
+</body>
+</html>
+
+

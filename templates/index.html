@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title></title>
+</head>
+<body>
+
+<div class="container-fluid" style="background-color:#1E88E5;color:#fff;height:210px;">
+  <h1>DIAMETRIC</h1>
+  <h3>PREDICT YOUR BLOOD GLUCOSE</h3>
+  <p>Enter the details in numeric values and click on submit button to predict your values.</p>
+  <p>Our aim to help people better understand diabetes.</p>
+  <form action="{{ url_for('fourth') }}">
+        <input type="submit" value="Food Intake Monitor" class="btn btn-danger">
+  </form>
+</div>
+
+
+<div class="container-fluid" style="background-color:#ff9800;color:#fff;height:1400px;" >
+  <center>
+  <h3>Enter your values here</h3>
+
+
+<form action='/first' method='POST' id='submitform'>  
+
+<div class="form-group">
+    <label for="first">AGE:</label><br>
+    <input type="text" name="first" STYLE="color:black;"><br><br><br>
+   </div>
+
+<div class="form-group">
+    <label for="second">GENDER(MALE:1 & FEMALE:2)</label><br>
+    <input type="text" name="second" STYLE="color:black;"><br><br><br>
+   </div>
+
+<div class="form-group">
+    <label for="third">BODY MASS INDEX:</label><br>
+    <input type="text" name="third" STYLE="color:black;"><br><br><br>
+   </div>
+
+<div class="form-group">
+    <label for="fourth">BLOOD PRESSURE:</label><br>
+    <input type="text" name="fourth" STYLE="color:black;"><br><br><br>
+   </div>
+
+<div class="form-group">
+    <label for="fifth">TC:</label><br>
+    <input type="text" name="fifth" STYLE="color:black;"><br><br><br>
+   </div>
+
+<div class="form-group">
+    <label for="sixth">LDL:</label><br>
+    <input type="text" name="sixth" STYLE="color:black;"><br><br><br>
+   </div>
+
+<div class="form-group">
+    <label for="seventh">HDL:</label><br>
+    <input type="text" name="seventh" STYLE="color:black;"><br><br><br>
+   </div>
+
+<div class="form-group">
+    <label for="eight">TG:</label><br>
+    <input type="text" name="eight" STYLE="color:black;"><br><br><br>
+   </div>
+
+<div class="form-group">
+    <label for="nineth">TCH(FORMULA):</label><br>
+    <input type="text" name="nineth" STYLE="color:black;"><br><br><br>
+   </div>
+
+<div class="form-group">
+    <label for="tenth">LTG(EYE):</label><br>
+    <input type="text" name="tenth" STYLE="color:black;"><br><br><br>
+   </div>
+
+
+  <input type="submit" value="Submit" class="btn btn-danger">
+
+
+  <br><br><br>
+
+</form>
+   
+
+</center>
+</div>
+</body>
+</html>
+
